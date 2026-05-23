@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Buddy - Help &amp; Support</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="support.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+            <h1><span class="app-name">Song Buddy</span></h1>
+            <p>Help &amp; Support</p>
+            <p class="last-updated">Everything you need to learn and practice with any song</p>
+        </header>
+
+        <!-- Layout: sidebar + main -->
+        <div class="support-layout">
+
+            <!-- Sidebar nav -->
+            <aside class="sidebar">
+                <p class="sidebar-title">Jump to</p>
+                <nav id="sidebar-nav">
+                    <a href="#getting-started"><span class="nav-icon">🎵</span>Getting Started</a>
+                    <a href="#separating"><span class="nav-icon">✂️</span>Separating a Song</a>
+                    <a href="#playback"><span class="nav-icon">🎚️</span>Playback Controls</a>
+                    <a href="#loops"><span class="nav-icon">🔁</span>Loop Regions</a>
+                    <a href="#speed-pitch"><span class="nav-icon">🐢</span>Speed &amp; Pitch</a>
+                    <a href="#metronome"><span class="nav-icon">🥁</span>Metronome</a>
+                    <a href="#tuner"><span class="nav-icon">🎸</span>Tuner</a>
+                    <a href="#live-input"><span class="nav-icon">🎤</span>Live Input</a>
+                    <a href="#exporting"><span class="nav-icon">📤</span>Exporting Stems</a>
+                    <a href="#settings"><span class="nav-icon">⚙️</span>Settings</a>
+                </nav>
+            </aside>
+
+            <!-- Main content -->
+            <main class="support-main">
+
+                <!-- 1. Getting Started -->
+                <section id="getting-started" class="topic-card">
+                    <div class="topic-header">
+                        <span class="topic-icon">🎵</span>
+                        <h2 class="topic-title">Getting Started</h2>
+                    </div>
+                    <ol class="steps">
+                        <li>
+                            <span class="step-num">1</span>
+                            <span class="step-text">Open Song Buddy. Each song you work on lives in its own <strong>.songbuddy</strong> file — tap <strong>New Document</strong> to create one, or open an existing one from Files.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">2</span>
+                            <span class="step-text">You'll see two options: <strong>Separate Audio…</strong> to split a song into its individual parts (stems), or <strong>Add Track…</strong> to bring in an audio file as-is.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">3</span>
+                            <span class="step-text">On <strong>Mac</strong>, you can also drag and drop an audio file directly onto the window.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">4</span>
+                            <span class="step-text">Once your stems are ready, the waveforms for each part appear as coloured rows. Tap or click anywhere on a waveform to jump to that point in the song.</span>
+                        </li>
+                    </ol>
+                    <div class="tip-callout">
+                        <span class="tip-callout-icon">💡</span>
+                        <span>Song Buddy supports any audio format your device can read — MP3, AAC, FLAC, WAV, AIFF, and more.</span>
+                    </div>
+                </section>
+
+                <!-- 2. Separating -->
+                <section id="separating" class="topic-card">
+                    <div class="topic-header">
+                        <span class="topic-icon">✂️</span>
+                        <h2 class="topic-title">Separating a Song into Stems</h2>
+                    </div>
+                    <ol class="steps">
+                        <li>
+                            <span class="step-num">1</span>
+                            <span class="step-text">Tap <strong>Separate Audio…</strong> and pick an audio file from your device.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">2</span>
+                            <span class="step-text">Song Buddy will separate the song into up to <strong>6 stems</strong>: vocals, drums, bass, guitar, piano, and other. The whole process runs <strong>on your device</strong> — no internet required.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">3</span>
+                            <span class="step-text">A progress bar shows how far along the separation is. Most songs take a few minutes. You can cancel at any time.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">4</span>
+                            <span class="step-text">When separation is complete, all stems appear as coloured waveform rows ready to play.</span>
+                        </li>
+                    </ol>
+                    <div class="tip-callout">
+                        <span class="tip-callout-icon">💡</span>
+                        <span>Separation quality depends on the source recording. Clean studio recordings tend to separate more cleanly than live recordings with heavy reverb or distortion.</span>
+                    </div>
+                </section>
+
+                <!-- 3. Playback -->
+                <section id="playback" class="topic-card">
+                    <div class="topic-header">
+                        <span class="topic-icon">🎚️</span>
+                        <h2 class="topic-title">Playback Controls</h2>
+                    </div>
+                    <ol class="steps">
+                        <li>
+                            <span class="step-num">1</span>
+                            <span class="step-text">Tap <strong>Play / Pause</strong> to start or stop playback. The <strong>return-to-start</strong> button jumps back to the beginning.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">2</span>
+                            <span class="step-text"><strong>Mute</strong> a stem by tapping the speaker icon on its row — the waveform dims to show it's silent.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">3</span>
+                            <span class="step-text"><strong>Solo</strong> a stem to hear only that part. All other stems are silenced while a stem is soloed. Tap solo again to release it.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">4</span>
+                            <span class="step-text">Drag the <strong>volume slider</strong> on each stem row to balance the mix exactly how you want it.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">5</span>
+                            <span class="step-text">The <strong>master volume</strong> control (speaker icon in the toolbar on Mac, or the Master sheet on iOS) adjusts the overall output level.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">6</span>
+                            <span class="step-text">Tap or click anywhere on a waveform to seek to that position. On Mac, you can also drag the playhead directly.</span>
+                        </li>
+                    </ol>
+                    <div class="tip-callout">
+                        <span class="tip-callout-icon">💡</span>
+                        <span>To practice a bass line, solo the bass stem. To play along on guitar, mute the guitar stem and leave everything else audible.</span>
+                    </div>
+                </section>
+
+                <!-- 4. Loops -->
+                <section id="loops" class="topic-card">
+                    <div class="topic-header">
+                        <span class="topic-icon">🔁</span>
+                        <h2 class="topic-title">Loop Regions</h2>
+                    </div>
+                    <ol class="steps">
+                        <li>
+                            <span class="step-num">1</span>
+                            <span class="step-text">On <strong>Mac</strong>, hold <strong>Shift</strong> and drag across any waveform to paint a loop region. The highlighted area will repeat continuously.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">2</span>
+                            <span class="step-text">On <strong>iPhone/iPad</strong>, open the <strong>Regions</strong> sheet and tap <strong>+</strong> to create a loop at the current playhead position. You can then drag its edges on the waveform to adjust it.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">3</span>
+                            <span class="step-text">You can save <strong>multiple named loops</strong> in one document — perfect for marking the verse, chorus, bridge, or a tricky solo.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">4</span>
+                            <span class="step-text">Tap a loop in the Regions list to <strong>activate</strong> it. The loop toggle in the transport controls must be enabled for the region to repeat.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">5</span>
+                            <span class="step-text"><strong>Rename</strong> a loop by double-clicking its name on Mac, or by tapping and holding the row on iOS.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">6</span>
+                            <span class="step-text">Delete a loop with the trash icon (Mac) or a swipe-to-delete gesture (iOS).</span>
+                        </li>
+                    </ol>
+                    <div class="tip-callout">
+                        <span class="tip-callout-icon">💡</span>
+                        <span>Set a tight loop around just two or four bars of a difficult passage. Once you can play it cleanly at full speed, widen the loop to include more context.</span>
+                    </div>
+                </section>
+
+                <!-- 5. Speed & Pitch -->
+                <section id="speed-pitch" class="topic-card">
+                    <div class="topic-header">
+                        <span class="topic-icon">🐢</span>
+                        <h2 class="topic-title">Speed &amp; Pitch</h2>
+                    </div>
+                    <ol class="steps">
+                        <li>
+                            <span class="step-num">1</span>
+                            <span class="step-text">The <strong>Speed</strong> slider (at the bottom of the waveform area on Mac, or in Song Settings on iOS) sets playback rate from <strong>30% to 100%</strong>. The pitch stays the same regardless of speed.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">2</span>
+                            <span class="step-text">Start slow — around 50–60% — until you can play the passage cleanly, then gradually raise the speed until you reach 100%.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">3</span>
+                            <span class="step-text">The <strong>Pitch</strong> stepper shifts the entire song up or down in semitones (±12 st) without affecting speed. Use this to match a song to your instrument's tuning, or to transpose a key for easier fingering.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">4</span>
+                            <span class="step-text">Both settings are saved with your <strong>.songbuddy</strong> file so they are restored next time you open it.</span>
+                        </li>
+                    </ol>
+                </section>
+
+                <!-- 6. Metronome -->
+                <section id="metronome" class="topic-card">
+                    <div class="topic-header">
+                        <span class="topic-icon">🥁</span>
+                        <h2 class="topic-title">Metronome</h2>
+                    </div>
+                    <ol class="steps">
+                        <li>
+                            <span class="step-num">1</span>
+                            <span class="step-text">On <strong>Mac</strong>, click the BPM readout in the toolbar to open the Metronome popover. On <strong>iPhone/iPad</strong>, tap the metronome icon to open the Metronome sheet.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">2</span>
+                            <span class="step-text">Toggle <strong>Enable</strong> to turn on the click track. Song Buddy automatically detects the tempo from the drums stem — no manual BPM entry needed.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">3</span>
+                            <span class="step-text">If the detected tempo seems doubled or halved, use the <strong>÷2</strong> or <strong>×2</strong> buttons to correct it.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">4</span>
+                            <span class="step-text">The <strong>volume slider</strong> at the bottom controls how loud the click is in the mix.</span>
+                        </li>
+                    </ol>
+                    <div class="tip-callout">
+                        <span class="tip-callout-icon">💡</span>
+                        <span>The metronome follows the drummer's natural timing where beats were detected, then fills in the gaps on the grid — so it stays tight even through tempo variations.</span>
+                    </div>
+                </section>
+
+                <!-- 7. Tuner -->
+                <section id="tuner" class="topic-card">
+                    <div class="topic-header">
+                        <span class="topic-icon">🎸</span>
+                        <h2 class="topic-title">Tuner</h2>
+                    </div>
+                    <ol class="steps">
+                        <li>
+                            <span class="step-num">1</span>
+                            <span class="step-text">Tap the <strong>tuning fork icon</strong> in the toolbar (Mac) or toolbar menu (iOS) to open the chromatic tuner.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">2</span>
+                            <span class="step-text">Play a note on your instrument into the microphone or audio interface. The tuner shows the nearest <strong>note name, octave</strong>, and how many <strong>cents</strong> sharp or flat you are.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">3</span>
+                            <span class="step-text">The bar turns <strong>green</strong> when you are within ±8 cents of the target pitch — that's in tune.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">4</span>
+                            <span class="step-text">Close the tuner panel when you're done. It stops listening as soon as it's closed.</span>
+                        </li>
+                    </ol>
+                    <div class="tip-callout">
+                        <span class="tip-callout-icon">💡</span>
+                        <span>If the song is pitched-shifted in Song Buddy, tune your instrument to match the shifted pitch before playing along.</span>
+                    </div>
+                </section>
+
+                <!-- 8. Live Input -->
+                <section id="live-input" class="topic-card">
+                    <div class="topic-header">
+                        <span class="topic-icon">🎤</span>
+                        <h2 class="topic-title">Live Input</h2>
+                    </div>
+                    <ol class="steps">
+                        <li>
+                            <span class="step-num">1</span>
+                            <span class="step-text">Connect your instrument or microphone. On <strong>Mac</strong>, open the floating <strong>Input</strong> panel from the toolbar. On <strong>iPhone/iPad</strong>, tap the Input option from the toolbar menu.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">2</span>
+                            <span class="step-text">Select your <strong>input device</strong> from the picker at the top. Enable <strong>Monitoring</strong> to hear yourself through the FX chain in real time.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">3</span>
+                            <span class="step-text">The built-in <strong>amp section</strong> gives you a 3-band tone stack (bass, mid, treble), a compressor, and a choice of cabinet simulations — from a clean 1×12 to a closed-back 4×12.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">4</span>
+                            <span class="step-text">Add <strong>reverb</strong> with the Reverb knob to place yourself in a room alongside the track.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">5</span>
+                            <span class="step-text">Save your favourite settings as a <strong>preset</strong> using the + button at the bottom of the Input panel. Presets are shared across all your documents.</span>
+                        </li>
+                    </ol>
+                    <div class="tip-callout">
+                        <span class="tip-callout-icon">💡</span>
+                        <span>Use <strong>Test with file…</strong> in the Input panel to audition your amp and effect settings through a chosen audio file — useful when you don't have your instrument plugged in.</span>
+                    </div>
+                </section>
+
+                <!-- 9. Exporting -->
+                <section id="exporting" class="topic-card">
+                    <div class="topic-header">
+                        <span class="topic-icon">📤</span>
+                        <h2 class="topic-title">Exporting Stems</h2>
+                    </div>
+                    <ol class="steps">
+                        <li>
+                            <span class="step-num">1</span>
+                            <span class="step-text">On <strong>Mac</strong>, go to <strong>File → Export tracks…</strong> (⌘E). A save panel opens — choose a folder and Song Buddy copies all stem files there.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">2</span>
+                            <span class="step-text">On <strong>iPhone/iPad</strong>, long-press a stem row and tap <strong>Export</strong> to share the individual stem file via AirDrop, Files, or any other app.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">3</span>
+                            <span class="step-text">Stems are exported as <strong>Apple Lossless (ALAC) m4a</strong> files — lossless quality at roughly half the size of WAV.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">4</span>
+                            <span class="step-text">You can import exported stems into any DAW (Logic Pro, GarageBand, Ableton, etc.) for further editing or mixing.</span>
+                        </li>
+                    </ol>
+                </section>
+
+                <!-- 10. Settings -->
+                <section id="settings" class="topic-card">
+                    <div class="topic-header">
+                        <span class="topic-icon">⚙️</span>
+                        <h2 class="topic-title">Settings</h2>
+                    </div>
+                    <ol class="steps">
+                        <li>
+                            <span class="step-num">1</span>
+                            <span class="step-text">On <strong>Mac</strong>, open Settings via the <strong>Song Buddy menu → Settings…</strong> (⌘,). On <strong>iPhone/iPad</strong>, settings are accessible from the toolbar menu inside each document.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">2</span>
+                            <span class="step-text"><strong>Default export folder</strong> (Mac) — Choose a folder that Song Buddy will open automatically when you export tracks, so you don't have to navigate every time.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">3</span>
+                            <span class="step-text"><strong>Audio input / output device</strong> (Mac) — Choose which interface Song Buddy uses for playback and for the live input chain.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">4</span>
+                            <span class="step-text"><strong>Default master volume</strong> — Sets the starting volume for new documents.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">5</span>
+                            <span class="step-text"><strong>Show welcome screen again</strong> — Brings back the intro guide shown on first launch.</span>
+                        </li>
+                    </ol>
+                </section>
+
+                <!-- Contact / footer CTA -->
+                <div class="contact">
+                    <h2>Still need help?</h2>
+                    <p>I'm happy to hear from you. If something isn't working as expected or you have a suggestion, drop me a message.</p>
+                    <p>Email: <a href="mailto:songbuddy@icloud.com">songbuddy@icloud.com</a></p>
+                    <p>You can also review the <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms and Conditions</a>.</p>
+                </div>
+
+            </main>
+        </div><!-- /.support-layout -->
+
+        <footer>
+            <p>&copy; 2026 Song Buddy. All rights reserved.</p>
+        </footer>
+
+    </div><!-- /.container -->
+
+    <!-- Back to top button -->
+    <a href="#" id="back-to-top" aria-label="Back to top">↑</a>
+
+    <script>
+        // Back-to-top visibility
+        const btn = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            btn.classList.toggle('visible', window.scrollY > 300);
+        });
+
+        // Sidebar active link highlighting
+        const sections = document.querySelectorAll('.topic-card[id]');
+        const navLinks = document.querySelectorAll('#sidebar-nav a');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navLinks.forEach(link => {
+                        link.classList.toggle(
+                            'active',
+                            link.getAttribute('href') === '#' + entry.target.id
+                        );
+                    });
+                }
+            });
+        }, { rootMargin: '-20% 0px -60% 0px' });
+
+        sections.forEach(section => observer.observe(section));
+
+        // Smooth scroll for sidebar links
+        navLinks.forEach(link => {
+            link.addEventListener('click', e => {
+                e.preventDefault();
+                const target = document.querySelector(link.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+
+        // Back to top smooth scroll
+        btn.addEventListener('click', e => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
