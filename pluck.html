@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pluck - Download &amp; Help</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="support.css">
+    <style>
+        /* ── Pluck green accent (overrides the shared blue) ── */
+        .app-name { color: #34a853; }
+        .step-num { background: #34a853; }
+        .sidebar nav a:hover { background: #eef8f0; color: #2c8c46; }
+        .sidebar nav a.active { background: #e3f5e8; color: #2c8c46; }
+        .tip-callout { background: #eef8f0; border-color: #bfe6c9; color: #1e6b34; }
+
+        /* ── Download button ── */
+        .download-cta { margin-top: 24px; }
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #34a853;
+            color: white;
+            font-size: 1.05em;
+            font-weight: 600;
+            padding: 14px 28px;
+            border-radius: 12px;
+            text-decoration: none;
+            box-shadow: 0 2px 12px rgba(52, 168, 83, 0.35);
+            transition: background 0.15s, transform 0.05s;
+        }
+        .download-btn:hover { background: #2c8c46; text-decoration: none; }
+        .download-btn:active { transform: translateY(1px); }
+        .download-note {
+            margin-top: 10px;
+            color: #86868b;
+            font-size: 0.85em;
+        }
+
+        /* ── Code block for terminal commands ── */
+        code, .cmd {
+            font-family: 'SF Mono', SFMono-Regular, ui-monospace, Menlo, Consolas, monospace;
+            font-size: 0.9em;
+        }
+        code {
+            background: #ececef;
+            padding: 1px 6px;
+            border-radius: 5px;
+            color: #1d1d1f;
+        }
+        .cmd {
+            display: block;
+            background: #1d1d1f;
+            color: #eaeaea;
+            padding: 12px 16px;
+            border-radius: 8px;
+            margin: 10px 0 4px;
+            overflow-x: auto;
+            white-space: pre;
+        }
+        .cmd .prompt { color: #34a853; user-select: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+            <h1><span class="app-name">☘️ Pluck</span></h1>
+            <p>Download &amp; Help</p>
+            <p class="last-updated">A tiny Mac menu-bar app that saves YouTube audio as clean <strong>.m4a</strong> files</p>
+            <p class="download-cta">
+                <a href="https://pub-8ec5c98be48d44dea5c2217a92a8fa44.r2.dev/Pluck.zip" class="download-btn">
+                    ⬇︎ Download Pluck for Mac
+                </a>
+            </p>
+            <p class="download-note">macOS · Apple Silicon &amp; Intel · free</p>
+        </header>
+
+        <!-- Layout: sidebar + main -->
+        <div class="support-layout">
+
+            <!-- Sidebar nav -->
+            <aside class="sidebar">
+                <p class="sidebar-title">Jump to</p>
+                <nav id="sidebar-nav">
+                    <a href="#what"><span class="nav-icon">☘️</span>What is Pluck</a>
+                    <a href="#install"><span class="nav-icon">📦</span>Install</a>
+                    <a href="#requirements"><span class="nav-icon">🛠️</span>Requirements</a>
+                    <a href="#using"><span class="nav-icon">▶️</span>Downloading a Song</a>
+                    <a href="#files"><span class="nav-icon">📁</span>Where Files Go</a>
+                    <a href="#troubleshooting"><span class="nav-icon">🩺</span>Troubleshooting</a>
+                </nav>
+            </aside>
+
+            <!-- Main content -->
+            <main class="support-main">
+
+                <!-- 1. What is Pluck -->
+                <section id="what" class="topic-card">
+                    <div class="topic-header">
+                        <span class="topic-icon">☘️</span>
+                        <h2 class="topic-title">What is Pluck</h2>
+                    </div>
+                    <ol class="steps">
+                        <li>
+                            <span class="step-num">1</span>
+                            <span class="step-text">Pluck is a small <strong>menu-bar app</strong> for Mac. It lives up in the menu bar — no window, no dock icon clutter.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">2</span>
+                            <span class="step-text">Paste a <strong>YouTube link</strong> and Pluck downloads the audio and saves it as an <strong>.m4a</strong> file in your Downloads folder.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">3</span>
+                            <span class="step-text">Everything runs <strong>on your Mac</strong>. There are no accounts and no sign-in.</span>
+                        </li>
+                    </ol>
+                    <div class="tip-callout">
+                        <span class="tip-callout-icon">💡</span>
+                        <span>Pluck pairs well with <strong>Song Buddy</strong> — grab a track with Pluck, then open the <code>.m4a</code> in Song Buddy to split it into stems and practise along.</span>
+                    </div>
+                </section>
+
+                <!-- 2. Install -->
+                <section id="install" class="topic-card">
+                    <div class="topic-header">
+                        <span class="topic-icon">📦</span>
+                        <h2 class="topic-title">Install</h2>
+                    </div>
+                    <ol class="steps">
+                        <li>
+                            <span class="step-num">1</span>
+                            <span class="step-text"><a href="https://pub-8ec5c98be48d44dea5c2217a92a8fa44.r2.dev/Pluck.zip">Download <strong>Pluck.zip</strong></a> and double-click it to unzip. You'll get <strong>Pluck.app</strong>.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">2</span>
+                            <span class="step-text">Drag <strong>Pluck.app</strong> into your <strong>Applications</strong> folder.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">3</span>
+                            <span class="step-text">The first time you open it, <strong>right-click</strong> the app and choose <strong>Open</strong>, then confirm. macOS asks this once for apps downloaded outside the App Store.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">4</span>
+                            <span class="step-text">Pluck appears as a <strong>☘️ shamrock</strong> in your menu bar. Click it to open the little download panel.</span>
+                        </li>
+                    </ol>
+                    <div class="tip-callout">
+                        <span class="tip-callout-icon">💡</span>
+                        <span>If macOS still blocks it, open <strong>System Settings → Privacy &amp; Security</strong>, scroll to the bottom, and click <strong>Open Anyway</strong>.</span>
+                    </div>
+                </section>
+
+                <!-- 3. Requirements -->
+                <section id="requirements" class="topic-card">
+                    <div class="topic-header">
+                        <span class="topic-icon">🛠️</span>
+                        <h2 class="topic-title">Requirements</h2>
+                    </div>
+                    <ol class="steps">
+                        <li>
+                            <span class="step-num">1</span>
+                            <span class="step-text">Pluck uses two free command-line tools to do the actual downloading and conversion: <strong>yt-dlp</strong> and <strong>ffmpeg</strong>. The easiest way to get them is <a href="https://brew.sh">Homebrew</a>.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">2</span>
+                            <span class="step-text">If you don't have Homebrew yet, install it by pasting this into <strong>Terminal</strong>:
+                                <span class="cmd"><span class="prompt">$ </span>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="step-num">3</span>
+                            <span class="step-text">Then install both tools with one command:
+                                <span class="cmd"><span class="prompt">$ </span>brew install yt-dlp ffmpeg</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="step-num">4</span>
+                            <span class="step-text">That's it — Pluck finds them automatically. To keep downloads working as YouTube changes, update yt-dlp now and then:
+                                <span class="cmd"><span class="prompt">$ </span>brew upgrade yt-dlp</span>
+                            </span>
+                        </li>
+                    </ol>
+                </section>
+
+                <!-- 4. Downloading a Song -->
+                <section id="using" class="topic-card">
+                    <div class="topic-header">
+                        <span class="topic-icon">▶️</span>
+                        <h2 class="topic-title">Downloading a Song</h2>
+                    </div>
+                    <ol class="steps">
+                        <li>
+                            <span class="step-num">1</span>
+                            <span class="step-text">Copy a <strong>YouTube link</strong> from your browser, then click the <strong>☘️</strong> in the menu bar. If the link is on your clipboard, Pluck <strong>pastes it in for you</strong> automatically.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">2</span>
+                            <span class="step-text">If it wasn't auto-filled, paste the link into the <strong>Paste YouTube URL…</strong> field. Pluck accepts <code>youtube.com</code>, <code>youtu.be</code>, and <code>music.youtube.com</code> links.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">3</span>
+                            <span class="step-text">Click <strong>Download</strong> (or press Return). A progress bar shows the download, then a short <strong>Converting…</strong> step while it makes the .m4a.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">4</span>
+                            <span class="step-text">Need to stop? Click <strong>Cancel</strong> at any time.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">5</span>
+                            <span class="step-text">When it's done, click <strong>Show in Finder</strong> to jump straight to the file, or <strong>Clear</strong> to reset for the next one.</span>
+                        </li>
+                    </ol>
+                </section>
+
+                <!-- 5. Where Files Go -->
+                <section id="files" class="topic-card">
+                    <div class="topic-header">
+                        <span class="topic-icon">📁</span>
+                        <h2 class="topic-title">Where Files Go</h2>
+                    </div>
+                    <ol class="steps">
+                        <li>
+                            <span class="step-num">1</span>
+                            <span class="step-text">Every download lands in your <strong>Downloads</strong> folder, named after the video title, as an <strong>.m4a</strong> audio file.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">2</span>
+                            <span class="step-text">.m4a plays in Music, QuickTime, and just about any app — and opens directly in <strong>Song Buddy</strong> for stem separation.</span>
+                        </li>
+                    </ol>
+                </section>
+
+                <!-- 6. Troubleshooting -->
+                <section id="troubleshooting" class="topic-card">
+                    <div class="topic-header">
+                        <span class="topic-icon">🩺</span>
+                        <h2 class="topic-title">Troubleshooting</h2>
+                    </div>
+                    <ol class="steps">
+                        <li>
+                            <span class="step-num">1</span>
+                            <span class="step-text"><strong>"yt-dlp not found" or "ffmpeg not found"</strong> — the tools aren't installed. Run <code>brew install yt-dlp ffmpeg</code> (see Requirements above), then try again.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">2</span>
+                            <span class="step-text"><strong>A download fails or errors out</strong> — YouTube changes often, which can break the downloader. Update it with <code>brew upgrade yt-dlp</code> and retry.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">3</span>
+                            <span class="step-text"><strong>"Not a YouTube URL"</strong> — Pluck only handles YouTube links. Make sure the address starts with <code>youtube.com</code>, <code>youtu.be</code>, or <code>music.youtube.com</code>.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">4</span>
+                            <span class="step-text"><strong>macOS won't open the app</strong> — right-click Pluck.app and choose <strong>Open</strong>, or allow it under <strong>System Settings → Privacy &amp; Security</strong>.</span>
+                        </li>
+                    </ol>
+                    <div class="tip-callout">
+                        <span class="tip-callout-icon">💡</span>
+                        <span>Please only download content you have the right to use. Pluck is a tool for grabbing your own uploads, public-domain material, and anything you're permitted to save.</span>
+                    </div>
+                </section>
+
+                <!-- Contact / footer CTA -->
+                <div class="contact">
+                    <h2>Still need help?</h2>
+                    <p>If something isn't working or you have a suggestion, drop me a message.</p>
+                    <p>Email: <a href="mailto:songbuddy@icloud.com">songbuddy@icloud.com</a></p>
+                    <p>Haven't got it yet? <a href="https://pub-8ec5c98be48d44dea5c2217a92a8fa44.r2.dev/Pluck.zip">Download Pluck for Mac</a>.</p>
+                </div>
+
+            </main>
+        </div><!-- /.support-layout -->
+
+        <footer>
+            <p>&copy; 2026 Pluck. All rights reserved.</p>
+        </footer>
+
+    </div><!-- /.container -->
+
+    <!-- Back to top button -->
+    <a href="#" id="back-to-top" aria-label="Back to top">↑</a>
+
+    <script>
+        // Back-to-top visibility
+        const btn = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            btn.classList.toggle('visible', window.scrollY > 300);
+        });
+
+        // Sidebar active link highlighting
+        const sections = document.querySelectorAll('.topic-card[id]');
+        const navLinks = document.querySelectorAll('#sidebar-nav a');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navLinks.forEach(link => {
+                        link.classList.toggle(
+                            'active',
+                            link.getAttribute('href') === '#' + entry.target.id
+                        );
+                    });
+                }
+            });
+        }, { rootMargin: '-20% 0px -60% 0px' });
+
+        sections.forEach(section => observer.observe(section));
+
+        // Smooth scroll for sidebar links
+        navLinks.forEach(link => {
+            link.addEventListener('click', e => {
+                e.preventDefault();
+                const target = document.querySelector(link.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+
+        // Back to top smooth scroll
+        btn.addEventListener('click', e => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
